@@ -6,16 +6,15 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+/*Nav-menu*/
 .topnav {
   overflow: hidden;
-  background-color: #333;
+  background-color: #18d979;
   position: relative;
 }
-
 .topnav #myLinks {
   display: none;
 }
-
 .topnav a {
   color: white;
   padding: 14px 16px;
@@ -23,7 +22,6 @@ body {
   font-size: 17px;
   display: block;
 }
-
 .topnav a.icon {
   background: black;
   display: block;
@@ -31,13 +29,31 @@ body {
   right: 0;
   top: 0;
 }
-
-.topnav a:hover {
-  background-color: #ddd;
+.topnav a:hover,
+.brand:hover {
+  background-color: #1872d9;
   color: black;
 }
-
 .active {
-  background-color: #04aa6d;
+  background-color: #d91818;
   color: white;
+}
+
+/*Brand grid*/
+.grid_brands {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 5px;
+  grid-row-gap: 5px;
+  margin: 5px;
+}
+.brand {
+  text-align: center;
+  border: 1px solid black;
+  padding: 10px;
+}
+a {
+  text-decoration: none;
+  color: black;
 }
