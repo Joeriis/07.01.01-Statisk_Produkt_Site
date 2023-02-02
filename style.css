@@ -1,12 +1,5 @@
-* {
-  margin: 0%;
-  padding: 0%;
-}
 body {
   font-family: Arial, Helvetica, sans-serif;
-}
-img {
-  width: 100%;
 }
 /*Nav-menu*/
 .topnav {
@@ -41,26 +34,12 @@ img {
   color: white;
 }
 
-/*Brand grid*/
-.grid_brands {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: repeat(3, 1fr);
-  grid-column-gap: 5px;
-  grid-row-gap: 5px;
-  margin: 5px;
-}
-.brand {
-  text-align: center;
-  border: 1px solid black;
-  padding: 10px;
-}
 a {
   text-decoration: none;
   color: black;
 }
 .discounted h2:last-child {
-  background-color: #d91818;
+  background-color: #c6d918;
 }
 .soldout img {
   opacity: 0.5;
@@ -72,15 +51,11 @@ a {
   color: white;
   padding: 1rem;
 }
-@media (min-width: 800px) {
-  /*Product layout*/
-  .product {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(150px, 300px));
-    gap: 10px;
-    margin: 5%;
-  }
-  .resize {
-    height: 67.5%;
-  }
+.breadcrum a {
+  color: #1872d9;
+}
+.productbox {
+  background-color: #18d979;
+  color: white;
+  padding: 1rem;
 }

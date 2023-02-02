@@ -1,0 +1,46 @@
+* {
+  margin: 0%;
+  padding: 0%;
+}
+img {
+  width: 100%;
+}
+
+/*Brand grid*/
+.grid_brands {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 5px;
+  grid-row-gap: 5px;
+  margin: 5px;
+}
+.brand {
+  text-align: center;
+  border: 1px solid black;
+  padding: 10px;
+}
+@media (min-width: 800px) {
+  /*Productlist layout*/
+  .product {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 300px));
+    gap: 10px;
+    margin: 5%;
+  }
+  .resize {
+    height: 67.5%;
+  }
+
+  /*Productlist layout*/
+  .grid_product {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  .productbox {
+    margin-top: 75%;
+    margin-right: 30%;
+    margin-bottom: 25%;
+  }
+}
