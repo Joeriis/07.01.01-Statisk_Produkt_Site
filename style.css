@@ -5,7 +5,9 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
-
+img {
+  width: 100%;
+}
 /*Nav-menu*/
 .topnav {
   overflow: hidden;
@@ -56,4 +58,29 @@ body {
 a {
   text-decoration: none;
   color: black;
+}
+.discounted h2:last-child {
+  background-color: #d91818;
+}
+.soldout img {
+  opacity: 0.5;
+}
+.product section.soldout::before {
+  content: "Sold Out";
+  position: absolute;
+  background-color: black;
+  color: white;
+  padding: 1rem;
+}
+@media (min-width: 800px) {
+  /*Product layout*/
+  .product {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 300px));
+    gap: 10px;
+    margin: 5%;
+  }
+  .resize {
+    height: 67.5%;
+  }
 }
