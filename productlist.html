@@ -22,16 +22,37 @@
             <i class="fa fa-bars"></i>
         </a>
     </div>
-    <h1>Products</h1>
-    <article class="product">
-        <section class="brand">
-            <a href="product.html">
-                <img class="resize" src="billeder/1163.webp" alt="shirt">
-                <h2>Sahara Team India Fanwear Round Neck Jersey</h2>
-                <h3>Tshirts | Nike</h3>
-                <h2>DKK 895,-</h2>
-            </a>
-        </section>
+    <h1>Produkter</h1>
+    <template id="smallProductTemplate">
+
+        <article class="product">
+            <img src="https://kea-alt-del.dk/t7/images/webp/640/1163.webp" alt="shirt" />
+
+            <h2>Sahara Team India Fanwear Round Neck Jersey</h2>
+            <h3 class="subtle">Tshirts | Nike</h3>
+            <h2 class="price"> <span>Prev</span> DKK 895,-</h2>
+            <div class="discounted">
+                <p>Now DKK 1569,-</p>
+                <p>-34%</p>
+            </div>
+            <a href="product.html">Read More</a>
+
+        </article>
+    </template>
+    <!-- 
+        <h1>Produkter</h1>
+    <template id="smallProductTemplate">
+        <article class="product">
+            <section class="brand">
+                <a href="product.html">
+                    <img class="resize" src="billeder/1163.webp" alt="shirt">
+                    <h2>Sahara Team India Fanwear Round Neck Jersey</h2>
+                    <h3>Tshirts | Nike</h3>
+                    <h2>DKK 895,-</h2>
+                </a>
+            </section>
+        </article>
+    </template>
         <section class="brand soldout">
             <a href="product.html">
                 <img src="billeder/1164.webp" alt="shirt">
@@ -76,8 +97,9 @@
                 <h2>Prev. DKK 1299,-</h2>
             </a>
         </section>
-    </article>
+    </article> -->
     <script src="script.js"> </script>
+    <script src="js/productlist.js"></script>
 </body>
 
 </html>
