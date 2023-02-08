@@ -8,20 +8,25 @@ function showProducts(products) {
 }
 
 function showProduct(product) {
-  //console.log(product);
   //fang template
+  console.log(product);
   const template = document.querySelector("#smallProductTemplate").content;
   //lav en kopi
   const copy = template.cloneNode(true);
   //ændre indhold
   copy.querySelector("h3").textContent = product.productdisplayname;
-    if (product.soldout) {
-      //produktet er udsolgt
-        copy.querySelector("main").appendChild(copy);
-    //append
-    document.querySelector("main").appendChild(copy);
-}
+  copy.querySelector(".price").textContent = product.price;
+  copy.querySelector(".subtle").textContent = product.articletype;
+  copy.querySelector(".discounted").textContent = product.discount;
 
+  if (product.soldout) {
+    //produktet er udsolgt
+    // copy.querySelector("main").appendChild(copy);
+    console.log("hello");
+    //append
+  }
+  document.querySelector("main").appendChild(copy);
+}
 /* <template id="smallProductTemplate">
   <article class="product">
     <img src="https://kea-alt-del.dk/t7/images/webp/640/1163.webp" alt="shirt" />
