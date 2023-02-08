@@ -21,7 +21,7 @@ function showProduct(product) {
 
   if (product.soldout) {
     //produktet er udsolgt
-    // copy.querySelector("main").appendChild(copy);
+    // copy.querySelector("article").classlist.add("soldOut");
     console.log("hello");
     //append
   }
