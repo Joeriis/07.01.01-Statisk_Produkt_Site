@@ -41,10 +41,10 @@ a {
 .discounted h2:last-child {
   background-color: #c6d918;
 }
-.soldout img {
+.soldOut img {
   opacity: 0.5;
 }
-.product section.soldout::before {
+.product section.soldOut::before {
   content: "Sold Out";
   position: absolute;
   background-color: black;

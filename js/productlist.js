@@ -19,12 +19,12 @@ function showProduct(product) {
   copy.querySelector(".subtle").textContent = product.articletype;
   copy.querySelector(".discounted").textContent = product.discount;
 
+  //produktet er udsolgt
   if (product.soldout) {
-    //produktet er udsolgt
-    // copy.querySelector("article").classlist.add("soldOut");
-    console.log("hello");
-    //append
+    copy.querySelector("article").classList.add("soldOut");
   }
+  copy.querySelector(".read-more").setAttribute("href", `product.html?id=${product.id}`);
+  //append
   document.querySelector("main").appendChild(copy);
 }
 /* <template id="smallProductTemplate">

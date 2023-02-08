@@ -12,18 +12,29 @@
 <body>
 
     <!-- Top Navigation Menu -->
-    <div class="topnav">
-        <a href="index.html" class="active">Swagshit</a>
-        <div id="myLinks">
-            <a href="brands.html">Brands</a>
-            <a href="productlist.html">Products</a>
+    <header>
+        <div class="topnav">
+            <a href="index.html" class="active">Swagshit</a>
+            <div id="myLinks">
+                <a href="brands.html">Brands</a>
+                <a href="productlist.html">Products</a>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
         </div>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <i class="fa fa-bars"></i>
-        </a>
-    </div>
+    </header>
 
+    <main></main>
+    <template>
+        <article>
+            <h2>Her kommer produktets navn</h2>
+            <p class="description">Beskrivelse</p>
+            <p class="price">Pris</p>
+        </article>
+    </template>
     <script src="script.js"> </script>
+    <script src="js/index.js"></script>
 </body>
 
 </html>
